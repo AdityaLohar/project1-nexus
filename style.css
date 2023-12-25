@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Piazzolla', serif;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+    background-size: 600%;
+    animation: anime 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+}
+
+form {
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    color: rgb(95, 95, 95);
+}
+
+
+button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s ease;
+    color: rgba(255,255,255,0.9);
+    border-radius: 50px;
+    background: linear-gradient(45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+    background-size: 600%;
+    animation: anime 10s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #1a2a6c;
+    /* color: #ff4848; */
+}
+
+#registerError, #loginError {
+    visibility: hidden;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    transition: 0.2s ease;
+}
+  
+#dangerIcon1, #dangerIcon2 {
+    visibility: hidden;
+}
+
+
